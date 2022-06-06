@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
     <title>Bankist | When Banking meets Minimalist</title>
     <script defer src="script.js"></script>
   </head>
@@ -39,23 +40,32 @@
             >
           </li>
         </ul>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon
+          ><ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </nav>
 
       <div class="header__title">
-        <h1>
-          When
-          <!-- Green highlight effect -->
-          <span class="highlight">banking</span>
-          meets<br />
-          <span class="highlight">minimalist</span>
-        </h1>
-        <h4>A simpler banking experience for a simpler life.</h4>
-        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-        <img
-          src="img/hero.png"
-          class="header__img"
-          alt="Minimalist bank items"
-        />
+        <div class="header__text-container">
+          <h1>
+            When
+            <span class="highlight">banking</span>
+            meets<br />
+            <span class="highlight">minimalist</span>
+          </h1>
+          <h4>A simpler banking experience for a simpler life.</h4>
+          <button class="btn--text btn--scroll-to">
+            Learn more &DownArrow;
+          </button>
+        </div>
+        <div class="header__img-container">
+          <img
+            src="img/hero.png"
+            class="header__img"
+            alt="Minimalist bank items"
+          />
+        </div>
       </div>
     </header>
 
@@ -277,11 +287,11 @@
             </address>
           </div>
         </div>
-
-        <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <!-- 
+        <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
         <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
         <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
-        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div>  -->
         <button class="slider__btn slider__btn--left">&larr;</button>
         <button class="slider__btn slider__btn--right">&rarr;</button>
         <div class="dots"></div>
@@ -352,5 +362,14 @@
       </form>
     </div>
     <div class="overlay hidden"></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

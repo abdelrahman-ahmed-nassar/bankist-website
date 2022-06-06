@@ -1,0 +1,227 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav {
+    padding: 0 2.4rem;
+  }
+  /* initial state */
+  .nav__links {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.6rem;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .nav--open .nav__links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 2rem;
+  }
+
+  /*****************/
+  /*    Header     */
+  /*****************/
+  .header {
+    height: auto;
+    padding: 0 0 9.6rem 0;
+  }
+  .header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3.2rem;
+    margin-top: 9.6rem;
+    gap: 6.4rem;
+  }
+  .header__text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .header__text-container h1 {
+    font-size: 4rem;
+  }
+  .header__text-container h4 {
+    font-size: 2.1rem;
+  }
+  .header__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__img-container img {
+    max-width: 60%;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+
+  /*******************/
+  .section__header {
+    font-size: 3.2rem;
+  }
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .features :nth-child(3) {
+    order: 4;
+  }
+  .features :nth-child(4) {
+    order: 3;
+  }
+  .features__feature {
+    width: 80%;
+    margin-bottom: 4.8rem;
+  }
+  /******************************************/
+  .operations__header {
+    font-size: 1.6rem;
+    margin-top: 2.4rem;
+  }
+  .operations__content {
+    padding: 2rem 3rem 3rem;
+  }
+  .operations__content--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+  /*****************/
+  .slider {
+    height: 80rem;
+  }
+  .slide {
+    height: 80rem;
+  }
+  .testimonial {
+    width: 80%;
+  }
+  .testimonial__header {
+    font-size: 2rem;
+  }
+  .testimonial__text {
+    font-size: 1.6rem;
+  }
+  .testimonial__name {
+    font-size: 1.4rem;
+  }
+  .testimonial__location {
+    font-size: 1.4rem;
+  }
+  .testimonial__photo {
+    width: 6rem;
+  }
+  .slider__btn {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: flex-end;
+    background-color: transparent;
+  }
+  /**************/
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .section--sign-up .section__header {
+    font-size: 2rem;
+  }
+  .section--sign-up .btn {
+    padding: 1rem 2rem;
+  }
+  .footer__item {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .header__img-container img {
+    max-width: 100%;
+  }
+  .header__text-container h1 {
+    font-size: 3rem;
+  }
+  .section__header {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .btn {
+    font-size: 1.4rem;
+    padding: 1rem 0.5rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+  .operations__tab--active {
+    transform: translateY(-80%);
+    -webkit-transform: translateY(-80%);
+    -moz-transform: translateY(-80%);
+    -ms-transform: translateY(-80%);
+    -o-transform: translateY(-80%);
+  }
+
+  .modal {
+    width: 80%;
+    padding: 5rem 2rem;
+  }
+  .modal__header {
+    font-size: 2rem;
+  }
+  .modal__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .modal__form input {
+    font-size: initial;
+  }
+}
+
+@media (max-height: 400px) {
+  .modal {
+    height: 450px;
+  }
+}

@@ -273,3 +273,15 @@ const sliders = function () {
   });
 };
 sliders();
+
+//------------ mobile nav
+const navBtn = document.querySelector('.btn-mobile-nav');
+
+// navBtn.addEventListener('click', function () {
+//   nav.classList.toggle('nav--open');
+// });
+
+nav.addEventListener('click', function (e) {
+  // if (e.target === navBtn) return;
+  nav.classList.toggle('nav--open');
+});
